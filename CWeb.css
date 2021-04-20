@@ -1,0 +1,229 @@
+.container{
+    height: 100vh;
+    background-image: url("BackGround/Grey.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    position: relative;
+    box-sizing: border-box;     
+}
+
+a{
+    text-decoration: none;
+     color: whitesmoke;
+}
+
+.BG2,.BG3,.BG4 {
+    min-height: 800px;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    
+  }
+.BG2:hover,.BG3:hover,.BG4:hover{
+    opacity: 1.0;
+}
+
+.BG2{
+    background-image: url("BackGround/Clicked/Cat.jpg");
+}  
+.BG3{
+    background-image: url("BackGround/Clicked/Bird.jpg");
+}  
+.BG4{
+    background-image: url("BackGround/Clicked/Squirrel.JPG");
+}
+
+.navbar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(black,grey);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.logo{
+    width: 275px;
+    cursor:pointer;
+}
+ 
+.login{
+    position: absolute;
+    width: 70px;
+    right: 5px;
+    margin-top: 2px;
+}
+
+nav{
+    flex: 1;
+    padding-left: 60px;
+    font-family: 'Antonio', sans-serif;
+    font-size: 20px;
+}
+
+nav ul li{
+    display: inline;
+    list-style: none;
+    margin: 0px 30px;
+    margin-bottom: 20px;
+}
+
+nav ul li a {
+     text-decoration: none;
+     color: whitesmoke;
+ }
+
+ 
+nav ul li a:hover {
+    color: #000;
+}
+
+.Pic{
+    height: 50%;
+    position: absolute;
+    bottom: 5px;
+    right: 150px;
+}
+ 
+.caption {
+    position:absolute;
+    left: 100;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+  }
+  
+.caption span.MidBlack {
+    background-color: black;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }  
+
+.caption span.MidBlack:hover{
+      opacity: 0.7;
+  }  
+
+.caption span.MidTransp {
+    background-color: transparent;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    border-style: solid;
+  }    
+
+.caption span.MidTransp:hover{
+    opacity: 0.7;
+}    
+
+.inbt{
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+.Shutter{
+    font-family: 'Courgette', cursive;
+}
+
+.inbt ul li{
+    display: inline;
+    list-style: none;
+    margin: 0px 30px;
+    margin-bottom: 20px;
+}
+
+.inbt ul li a {
+     text-decoration: none;
+     color: whitesmoke;
+ }
+
+.inbt ul li a:hover {
+    color: pink;
+}
+
+.inbt_Last{
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.logoD{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width:275px;
+
+}
+ 
+ul{
+    list-style: none;
+    letter-spacing: 3px;
+    position: relative;
+    display: block;
+}
+
+    ul.Lt{
+        float: left ;
+        text-align: left;
+        padding-left: 10%;
+    }
+
+    ul.Mid{
+        float: center;
+        text-align: left;
+        padding-left: 50%;
+    }
+
+    ul.Rt{
+        float: right;
+        padding-right: 10%;
+        text-align: left;
+    }
+
+/* Font*/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /*Instagram*/
+ .fa-instagram {
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    color: white;
+  }
+  
+ /* Twitter */
+ .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
