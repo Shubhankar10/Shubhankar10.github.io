@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        a{
+            text-decoration: none;
+            color:whitesmoke;
+        }
+        .BG{position: relative;
+            background-image: url("HomePage.png");
+            /* opacity: 0.5; */
+            height:100vh;
+            width:100vw;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position:center ;
+        }
+        header{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .Button{
+            background-color: white;
+            height: 5vh;
+            width: 5vw;
+            margin-top: 8vh;
+            margin-left: 5vw;
+            border:none;
+            border-radius: 10%;
+        }
+        .logo{
+            width:275px;
+            margin:auto;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        form {
+            padding:10px;
+        }
+        .Form{
+            position: absolute;
+            /* opacity: 0.6; */
+            text-align: center;
+            /* background-color: rgba(131, 131, 131, 0.479); */
+            border-radius: 20px;
+            box-shadow: rgb(0, 0, 0) 15px 15px 15px;
+            background-color: white;
+            margin:15% 30%;
+            /* margin-top: 10vh; */
+            width:40%;
+            /* height: 40%;  */
+        }
+        .formHead{
+            /* padding-top: 2vh; */
+            border:black 2px solid;
+            border-top-right-radius:20px ;
+            border-top-left-radius:20px ;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            text-align: center;
+            background-color: rgb(20, 112, 100);
+            box-shadow: rgb(0, 0, 0) 0px 5px 50px;
+            
+        }
+        .formHead .Fsignup{
+            /* padding-top: 2.5vh; */
+            padding: 2.5vh;
+        }
+        .formHead .Fsignup:hover{
+            border-top-left-radius: 20px;
+            background-color: darkslategray;
+        }
+        .formHead .Flogin{
+            padding-top: 2vh;
+            padding-bottom: 5vh;
+        }
+        .formHead .Flogin:hover{
+            border-top-right-radius: 20px;
+            background-color: rgb(69, 82, 82);
+        }
+        #UserName,#password{
+            border:none;
+            border-bottom:2px grey solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="BG">
+    <!-- <header>
+      <button class="Button"><a href="http://127.0.0.1:5500/Shutterooze/Web.html">Back</a></button>
+      <img src="Logos/LogoFBlack.jpg" class="logo">
+    </header> -->
+        <div class="Form">
+            <div class="formHead">
+                    <a href="" class="Fsignup">SignUP</a>
+                    <a href="" class="Flogin">Login</a>
+            </div>
+            <br>
+            <h3>Log in</h3>
+                    <form>
+                        <!-- Login -->
+                <p>  UserName: <input type="text" name="Userame" id="UserName" placeholder="Username">   </p>
+                <p>  Password: <input type="password" name="password" id="password" placeholder="Password">   </p>
+               
+                    <button>
+                        <input type="button">Submit
+                    </button>
+            
+            </form>
+        </div>
+    </div>
+</body>
+</html>
