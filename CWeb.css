@@ -7,6 +7,10 @@
     background-attachment:fixed;
     position: relative;
     box-sizing: border-box;     
+
+}
+body{
+    margin: 0px;
 }
 
 a{
@@ -15,7 +19,7 @@ a{
 }
 
 .BG2,.BG3,.BG4 {
-    min-height: 800px;
+    min-height: 120vh;
     position: relative;
     background-attachment: fixed;
     background-position: center;
@@ -282,6 +286,17 @@ nav ul li a:hover {
         .caption span.MidTransp{
             letter-spacing: 3px;
         }
-        
+        .logoD{
+            width:450px;
+        }
+        .fa .inbt{
+            text-align: center;
+            padding: 20%;
+        }
+        .MidTransp .MidBlack{
+            padding: 30px;
+            font-size: 35px;
+            letter-spacing: 12px;
+        }
     }  
  
