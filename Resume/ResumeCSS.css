@@ -1,0 +1,314 @@
+body{
+    background-color: #126E82;
+    margin:0px;
+    color:white;
+    font-family:  muli,sans-serif;
+    border:none;
+}
+a{
+  text-decoration: none;
+}
+/*////////////////////////////////////////////////////////////////////////NAVBAR///////////////*/
+nav{
+    height:10vh;
+    background-color:#38A3A5;
+    
+    display:flex;
+    align-items: center;
+    margin:20px;
+}
+nav ul li:hover{
+    background-color:black;
+    border-radius: 10px;
+    color:whitesmoke;
+}
+nav ul{
+    list-style: none; 
+    padding:0px;
+    
+}
+nav ul li,.text{
+    margin: 0vh 1.5vw;
+    display: inline;
+    padding: 1.5vh  1.5vw;
+    font-family: 'Antonio', sans-serif;
+    font-size: 20px;
+}
+nav ul li a, .text{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover,.text:hover{
+  background-color: black;
+    color: white;
+}
+.loginbtn,.registerbtn,.QRbtn{
+    background-color:#126E82;
+    color:white;
+    border-radius: 10%;
+    float: right;
+    padding:10px 1vw;
+    position: absolute;
+    box-shadow: 0px;
+    border: none;
+    font-size:15px;
+    font-family: 'Antonio', sans-serif;
+
+}
+.loginbtn{
+  right:13vw;
+}
+.registerbtn{
+  right:7vw;
+}
+.QRbtn{
+  right:3vw;
+}
+.loginbtn:hover,.registerbtn:hover,.QRbtn:hover{
+  color:black;
+}
+
+#logo{
+  height: 10vh;
+  padding: 2vh;
+}
+
+/*/////////////////////////////////////////////////////////////////////Login FORM//////////////////*/
+
+.Form{
+  border:none;
+  display: none;
+  padding: 1vh 24px;
+  margin: 5px;
+  position: absolute;
+  top: 0vh;
+  left: 30vw;
+  z-index: 1;
+  background-color: white;
+  color: black;
+
+  
+  /*border-radius: 5%;*/
+}
+.LogHeading{
+  margin-top:2vh;
+  margin-bottom: 1vh;
+}
+.cross{
+  border:none;
+  position:relative;
+  border-radius: 50%;
+  padding:7px;
+  background-color: rgb(160, 155, 155);
+  float: right;
+  cursor:pointer;
+}
+.formFeild{
+  border:none;
+  border-bottom: 2px rgb(151, 151, 151) solid;
+  height: 8vh;
+  width: 30vw;
+  box-sizing: border-box;
+  outline: none;  
+}
+
+.formFeild:focus{
+  border:black 2px solid;
+}
+
+#forgotPass{
+  float: right;
+}
+.Logbtn{
+  border:none;
+  width: 100%;
+  border-radius: 45px;
+  height: 6vh;
+  width: 30vw;
+  margin:1vh 0px;
+  display: block;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+
+  transition: all 0.3s ease 0s;
+}
+
+.LogIN{
+  background: linear-gradient(to right, #33ccff 50%, black 100%); 
+}
+.LogIN:hover{
+  background: linear-gradient(to left,black  0%,#33ccff  100%);
+  color: white;
+
+  box-shadow: 0px 15px 20px rgba(15, 66, 107, 0.4);
+  transform: translateY(-7px);
+}
+.LogRegi{
+  background-color: white;
+  border:1px black solid;
+  color:black;
+}
+.LogRegi:hover{
+  background-color: rgb(26, 25, 25);
+  color:white;
+}
+
+.QRscan{
+  align-self: center;
+  border: 3px dashed black;
+  border-radius: 15px;
+  margin:55px;
+  width: 40vh;
+  height: 40vh;
+  left: 50%;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+
+}
+
+.LogBtn{
+  width: 45%;
+  height:8vh;
+  margin:1%;
+  margin-right: 1%;
+  border-radius: 10px;
+  opacity: 0.9;
+  display: inline;
+}
+.LogBtnimg{
+  height:5vh;
+  opacity: 0.75;
+}
+.LogBtn:hover{
+  opacity: 1;
+}
+/*///////////////////////////////////////////////Dropdown Button//////////////////////*/
+ 
+ .dropbtn {
+    border: none;
+    cursor: pointer;
+    margin: 0vh 1.5vw;
+    display: inline;
+    padding: 1.5vh  1.5vw;
+    font-family: 'Antonio', sans-serif;
+    font-size: 20px;
+
+    background-color: #38A3A5;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color:black;
+    color: white;
+  }
+  
+  /* needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 50vw;
+    background-color: #38A3A5;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+
+  /* To show Dropdown on hover*/
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  /*To shiw dropdown on Click*/
+  .show{
+    display: block;
+  }
+
+/*///////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+/*font-family: 'Open Sans', sans-serif;*/
+
+  .heading{position:absolute;
+    font-size:80px;
+    color:black;
+    text-align:justify;
+    left: 10vw;
+    top: 25vh;
+    margin: 0%;
+    font-family: 'Vollkorn', serif;
+  }
+
+  .sub{position:absolute;
+    font-size:20px;
+    color:black;
+    text-align:justify;
+    left: 10vw;
+    top:40vh;
+    margin: 0%;
+    font-family: 'Vollkorn', serif;
+  }
+  .startbtn{
+    background-color: whitesmoke;
+    position:absolute;
+    top:70%;
+    left:45%;
+    padding:15px;
+    border:none;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+  }
+ .startbtn:hover{
+   border-radius: 5px;
+ }
+/*////////////////////////////////////////////////////////Wave Img////////////////*/
+
+.spacer{
+  aspect-ratio: 960/540;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+}
+
+.WaveLayer{
+  background-image: url("./WaveLayer2.svg");
+}
+
+footer{
+  text-align: center;
+  width:100%;
+  position: absolute;
+  bottom:-30vh;
+  border:none;
+  border-top: 3px black solid ;
+  padding: 2vh 0vw;
+  background-color: black;
+}

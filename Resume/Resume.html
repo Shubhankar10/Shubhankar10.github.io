@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Vollkorn:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="ResumeCSS.css">
+</head>
+<body>
+        <nav>
+
+          <a href=""><img src="Login2T.png" id="logo"></a>
+          <a href="www.google.com" class="text">Templates</a>
+          
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+            <div id="Drop" class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link</a>
+              <a href="#">Link</a>
+            </div>
+        
+            <button onclick="myFunction2()" class="dropbtn">Dropdown</button>
+            <div id="Drop2" class="dropdown-content">
+              <a href="#">Link 2</a>
+              <a href="#">Link</a>
+              <a href="#">Link</a>
+            </div>
+         
+            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+            <div id="Drop" class="dropdown-content">
+              <a href="#">Link 3</a>
+              <a href="#">Link</a>
+              <a href="#">Link</a>
+            </div>
+          </div> 
+
+           
+            <button type="button" class="loginbtn" onclick="openlogin()">Login</button>
+            <button type="button" class="registerbtn">Sign Up</button>
+            <button type="button" class="QRbtn" onclick="openQR()">[ ]</button>
+        </nav>  
+    
+
+
+
+
+          <div class="Form" id="LogForm">
+            <button type="button" class="cross" onclick="closelogin()"> X </button>
+            
+            <h1 class="loginHeading">  Log in </h1>
+              <form action="/action_page.php" method="post">
+                          <input type="text" name="name" class="formFeild  loginUser" placeholder="User Name"><br><br>
+                          <input type="password" class="formFeild loginPassword"name="password" placeholder="Password"><br><br>
+                          
+                          <input type="checkbox">Remember me
+                          <a href="" id="forgotPass"> Forgot Password?</a><br><br>
+                          
+                          <button type="button" class="Logbtn LogIN">Log in</button>
+                          <button type="button" class="Logbtn LogRegi ">Professional Account</button>
+                      
+                          <p>Not a Member ?</p> 
+                          <button type="button" class="Logbtn LogRegi">Create Your Account</button>
+                          
+                          <hr>
+                          <p>Or Sign In with:</p>
+                          <button type ="button" class="Logbtn LogBtn"><img src="../Logo/QRLogo.png" class="LogBtnimg"></button> 
+                          <button type ="button" class="Logbtn LogBtn"><img src="../Logo/GooglePNG1.png" class="LogBtnimg"></button>
+                          <button type ="button" class="Logbtn LogBtn"><img src="../Logo/LinkedinPNG1.png" class="LogBtnimg"></button>
+                          <button type ="button" class="Logbtn LogBtn"><img src="../Logo/FBPng.png" class="LogBtnimg"></button>       
+              </form>
+          </div>
+          <div class="Form" id="QRForm">
+            <button class="cross"  onclick="closeQR()">X </button>
+            <h1 class="loginHeading">Scan your QR to Login</h1>
+
+            <form action="/action_page.php" method="post">
+              <button class="QRscan">Scan your QR</button>
+              <p>Or:</p>
+              <a href="#LogForm"><button class="Logbtn LogRegi">Login with Username</button></a>
+            </form>
+
+          </div> 
+
+    
+
+    <p class="heading">TEXT.</p>
+    <p class="sub">Or a SubText.</p>
+    <button class="startbtn">Start Building</button>
+ 
+    <footer>Hello</footer>
+
+    <div class="spacer WaveLayer "></div>
+    
+    <script src="ResumeJS.js" charset="UTF-8"></script>
+</body>
+</html>

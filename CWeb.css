@@ -88,10 +88,12 @@ nav ul li a:hover {
 }
 /* Right align vale Login/Signup */
 .NavLeft{
-    float: right;
-    padding-right: 2vw;
+    position: absolute;
+    margin-right: 5vw;
 }
-
+.signup{
+    margin-right: 2vw;
+}
 
 /* 2 BG k beech vala black part */
 .caption {

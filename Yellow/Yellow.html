@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reader's_Worm</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="YellowCSS.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=IM+Fell+English&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <a href="">HEllo</a>
+      <img src="Name invert.jpg" class="LOGO" alt="Reader'sWorm LOGO">
+      <button class="Button"><a href="http://127.0.0.1:5500/Shutterooze/Web.html">Login</a></button>
+    
+    </header>  
+    
+
+    <main>
+      <nav>
+        <div class="navbar">
+            <a href="">About us</a>  
+            <a href="">Quotes</a>  
+            <a href="#Novel">Novels</a>  
+            <a href="">Genre</a>  
+            <a href=""><button class="navbut" onclick="myFunction()">Fan Fiction</button></a>  
+            <a href="" class="dropdown navbut">
+                <button class="dropbtn" onclick="myFunction()">Dropdown</button>
+                <div class="dropdown-content" id="myDropdown">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+            </a>
+        </div>
+      </nav>
+    
+      <section class="Up">
+        <div class="quote">
+          <p>The Lone wolf dies but the pack survives.<br>-Sansa Stark</p>
+        </div>
+        <img src="Yellow.jpg" class="SideImg">
+        <br>
+      </section>
+<!-- Heading  -->
+      <section id="Novel">
+        <h1 class="inbtHeading">  Novels  </h1>
+      </section>
+<!-- Trasnition -->
+      <section class="photo">
+        <img src="y3.jpg" id="img">
+        <img src="y3.jpg" id="img">
+        <img src="y3.jpg" id="img">
+        <p></p>
+        <span class="textbelowimg">Hello</span>
+        <span>Hello</span>
+        <span>Hello</span>
+        <p></p>
+<!-- Trasntion 2  -->
+        <img src="cat.JPG" id="imgs">
+        <img src="y3.jpg" id="imgs">
+        <img src="Blur (1).JPG" id="imgs">
+      </section>
+
+<!-- Pura section for Card type templates k liye -->
+      <section class="Temp">
+          <img src="../img/Jay.JPG" class="DP Limg" id="leftIMG" alt="DP">
+        <span class="box leftBox">
+          <span class="username">@Shubhankar10_01  </span>
+          <p>TEXT</p>
+        </span>
+
+          <img src="../img/Jay.JPG" class="DP sqimg" id="rightIMG" alt="DP">
+        <span class="box rightBox">
+          <span class="username">@Shubhankar10_01 R </span>
+          <p><input type="address"></p>
+        </span>
+      </section>
+<!--          !....!           -->
+
+       <p class="line">                </p>
+       <p class="circle">                 ..........  </p>
+
+
+      <div class="MidText">
+        <h1  class="btw">Books for everyone.</h1>
+        <p>..................Hello..................</p>
+      </div>
+
+    </main>
+
+
+
+
+
+
+    <button type="button" class="loginbtn" onclick="openlog1()">Login 1</button>
+    <button type="button" class="loginbtn" onclick="openlog2()">Login 2</button>
+    <div class="Form1" id="Log1Form">
+      <button type="button" class="cross1" onclick="closelog1()"> X </button>
+      
+      <h1 class="loginHeading1">  Log in </h1>
+        <form action="/action_page.php" method="post">
+                    <input type="text" name="name" class="formFeild1 " placeholder="User Name"><br><br>
+                    <input type="password" class="formFeild1 "name="password" placeholder="Password"><br><br>
+                    
+                    <input type="checkbox">Remember me
+                    <a href="" id="forgotPass"> Forgot Password?</a><br><br>
+
+                    <button type="button" class="Logbtn1 LogIN1">Log in</button>
+                    <button type="button" class="Logbtn1 LogRegi1 ">Professional Account</button>
+                
+                    <p>Not a Member ?</p> 
+                    <button type="button" class="Logbtn1 LogRegi1">Create Your Account</button>
+       
+                    
+                    <hr>
+                    <p>Or Sign In with:</p>
+                    <button type ="button" class="Logbtn1 LogBtn"><img src="../Logo/QRLogo.png" class="LogBtnimg"></button>
+                    <button type ="button" class="Logbtn1 LogBtn"><img src="../Logo/GooglePNG1.png" class="LogBtnimg"></button>
+                    <button type ="button" class="Logbtn1 LogBtn"><img src="../Logo/LinkedinPNG1.png" class="LogBtnimg"></button>
+                    <button type ="button" class="Logbtn1 LogBtn"><img src="../Logo/FBPng.png" class="LogBtnimg"></button>    
+        </form>
+    </div>
+
+    <div class="Form2" id="Log2Form">
+      
+      <button type="button" class="cross2" onclick="closelog2()"> < </button>
+      <h1 class="loginHeading1">  Log in </h1>
+        <form action="/action_page.php" method="post">
+
+        <p class="FeildHeading2">Log in with following options  </p>
+                    <button type ="button" class="Logbtn1 LogBtn2"><img src="../Logo/QRLogo.png" class="LogBtnimg"></button>
+                    <button type ="button" class="Logbtn1 LogBtn2"><img src="../Logo/GooglePNG1.png" class="LogBtnimg"></button>
+                    <button type ="button" class="Logbtn1 LogBtn2"><img src="../Logo/LinkedinPNG1.png" class="LogBtnimg"></button>
+                    <button type ="button" class="Logbtn1 LogBtn2"><img src="../Logo/FBPng.png" class="LogBtnimg"></button>    
+        <br><br>
+        <p class="FeildHeading2">Email </p>
+                    <input type="text" name="name" class="formFeild2 " ><br>
+        <p class="FeildHeading2">Password </p>          
+                    <input type="password" class="formFeild2 "name="password" ><br><br>
+                    
+                    <input type="checkbox">Remember me
+                    <a href="" id="forgotPass"> Forgot Password?</a><br><br>
+
+                    <button type="button" class="LogBtn2 Log2">Log in</button>
+                    <button type="button" class="LogBtn2 Log2">Professional Account</button>
+                
+                    <p>Not a Member ?  <a href="#">  Create Your Account</a></p> 
+                  </form>
+    </div>
+    <script src="YEllowJS.js" charset="UTF-8"></script>
+  
+  </body>
+  </html>
